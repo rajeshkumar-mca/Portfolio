@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vote for Your Favorite Candidate</h1>
+        </header>
+        <div class="voting-options">
+            <div class="option">
+                <img src="candidate1.jpg" alt="Candidate 1">
+                <h3>John Doe</h3>
+                <button class="vote-btn" id="vote1">Vote</button>
+            </div>
+            <div class="option">
+                <img src="candidate2.jpg" alt="Candidate 2">
+                <h3>Jane Smith</h3>
+                <button class="vote-btn" id="vote2">Vote</button>
+            </div>
+            <div class="option">
+                <img src="candidate3.jpg" alt="Candidate 3">
+                <h3>Robert Brown</h3>
+                <button class="vote-btn" id="vote3">Vote</button>
+            </div>
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+    
+    <script>
+        document.getElementById("vote1").addEventListener("click", function() {
+            document.getElementById("message").innerHTML = "You voted for John Doe!";
+        });
+        document.getElementById("vote2").addEventListener("click", function() {
+            document.getElementById("message").innerHTML = "You voted for Jane Smith!";
+        });
+        document.getElementById("vote3").addEventListener("click", function() {
+            document.getElementById("message").innerHTML = "You voted for Robert Brown!";
+        });
+    </script>
+</body>
+</html>
